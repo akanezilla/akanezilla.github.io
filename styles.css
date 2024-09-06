@@ -52,7 +52,7 @@ body {
 }
 
 .navbar a:hover {
-    color: #ff6666; /* Ruby Red */
+    color: #A7CDBD; /* Ruby Red */
 }
 
 /* Intro Section on Home Page */
@@ -70,7 +70,7 @@ body {
     background-color: rgba(88, 100, 29, 0.7); /* Emerald green with opacity */
     padding: 50px;
     text-align: center;
-    color: #003333;
+    color: #A3B4A2;
 }
 
 /* Gallery */
