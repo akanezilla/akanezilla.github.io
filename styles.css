@@ -52,7 +52,7 @@ body {
 }
 
 .navbar a:hover {
-    color: #A7CDBD; /* Ruby Red */
+    color: #A7CDBD
 }
 
 /* Intro Section on Home Page */
@@ -115,7 +115,7 @@ body {
 }
 
 .contact-form button {
-    background-color: #ff6666; /* Ruby Red */
+    background-color: #BFB59E;
     color: white;
     padding: 10px 20px;
     border: none;
