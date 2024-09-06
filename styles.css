@@ -1,0 +1,111 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, #004080, #00aaff); /* Sapphire blue gradient */
+    color: #fff;
+}
+
+.header {
+    background: url('images/background.jpg') no-repeat center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.navbar a:hover {
+    color: #ff6666; /* Ruby Red */
+}
+
+.intro h1 {
+    font-size: 4rem;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.intro p {
+    font-size: 1.5rem;
+}
+
+.banner {
+    background-color: rgba(0, 255, 128, 0.7); /* Emerald green with opacity */
+    padding: 50px;
+    text-align: center;
+    color: #003333;
+}
+
+/* Gallery */
+.gallery {
+    padding: 50px;
+    text-align: center;
+}
+
+.gallery .image-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.gallery img {
+    width: 300px;
+    height: 200px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Contact */
+.contact-form {
+    padding: 50px;
+    background-color: rgba(128, 0, 128, 0.7); /* Amethyst purple */
+    text-align: center;
+}
+
+.contact-form form {
+    display: inline-block;
+    text-align: left;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background-color: #ff6666; /* Ruby Red */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #cc3333;
+}
