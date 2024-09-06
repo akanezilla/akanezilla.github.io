@@ -27,6 +27,11 @@ body {
     background-size: cover;
 }
 
+.gallery-header {
+    background: url('background.jpeg') no-repeat center center;
+    background-size: cover;
+}
+
 /* Navbar */
 .navbar ul {
     list-style: none;
