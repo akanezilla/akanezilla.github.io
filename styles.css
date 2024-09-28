@@ -126,13 +126,13 @@ body {
 
 /* Gallery */
 .gallery {
-    /* padding: 50px; */
+    padding: 50px;
     text-align: center;
 }
 
 .gallery .image-container {
-    display: flex;
-    justify-content: space-around;
+    /* display: flex; */
+    justify-content: center;
     flex-wrap: wrap;
 }
 
