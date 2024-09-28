@@ -5,8 +5,65 @@
     box-sizing: border-box;
 }
 
+.background-container {
+    /* position: absolute; */
+    top: 0;
+    background: url('IMG_3566.jpeg') no-repeat center center;
+    background-color: rgb(140, 131, 232);
+    border: 2px solid #dbf4dc;
+    background-size: cover;
+}
+
+.intro-container {
+    position: absolute;
+    top: 10%;             /* Position the intro slightly down from the top */
+    left: 50%;            /* Center horizontally */
+    transform: translateX(-50%); /* Adjust horizontal centering */
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    padding: 20px;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    width: 80%;           /* Make it responsive */
+    max-width: 600px;
+    z-index: 10;          /* Ensures it's layered above other elements */
+}
+.intro-container h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.name-container {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    overflow: hidden; /* Hide the text when it's outside the viewport */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .sliding-name {
+    position: absolute;
+    white-space: nowrap; /* Prevent the text from wrapping to the next line */
+    font-size: 6rem;
+    animation: slide 10s linear infinite;
+    color: #ffffff;
+  }
+  
+  @keyframes slide {
+    0% {
+      transform: translateX(100%); /* Start off-screen to the right */
+    }
+    100% {
+      transform: translateX(-100%); /* Move off-screen to the left */
+    }
+  }
+  
+
 body {
-    font-family: Baskerville, "Baskerville Old Face";
+    font-family: Arial, Helvetica, sans-serif;
     background: linear-gradient(to bottom, #556F44, #95BF74);
     color: #fff;
 }
@@ -19,12 +76,6 @@ body {
     align-items: center;
     text-align: center;
     color: white;
-}
-
-/* Specific Background Image for the Home Page */
-.home-header {
-    background: url('IMG_3566.jpeg') no-repeat center center;
-    background-size: cover;
 }
 
 .gallery-header {
@@ -59,7 +110,7 @@ body {
 .intro h1 {
     font-size: 4rem;
     margin-bottom: 10px;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.5);
 }
 
 .intro p {
@@ -67,7 +118,7 @@ body {
 }
 
 .banner {
-    background-color: rgba(88, 100, 29, 0.7); /* Emerald green with opacity */
+    background-color: rgba(88, 100, 29, 0.7);
     padding: 50px;
     text-align: center;
     color: #e6ede6;
@@ -75,7 +126,7 @@ body {
 
 /* Gallery */
 .gallery {
-    padding: 50px;
+    /* padding: 50px; */
     text-align: center;
 }
 
@@ -124,5 +175,5 @@ body {
 }
 
 .contact-form button:hover {
-    background-color: #cc3333;
+    background-color: #f0fbff;
 }
